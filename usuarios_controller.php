@@ -16,7 +16,7 @@ function saveUser($nome, $telefone, $email, $senha) {
     
     // Verificação se o prepare foi bem-sucedido
     if (!$stmt) {
-        die("Erro na preparação: " . $conn->error);
+        die("Erro na preparação:aaa " . $conn->error);
     }
     
     $stmt->bind_param("ssss", $nome, $telefone, $email, $hashedPassword);
